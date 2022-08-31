@@ -77,8 +77,8 @@ $headerMenu = [
         <header class="mt-2">
             <div class=" container-fluid">
                 <div class="row">
-                    <div class="col-6">
-                        <img class="logo w-25 img-fluid" src="./logogoogle.png" alt="google-logo"><span class="privacy px-2 fw-bold text-secondary">Privacy & Termini</span>
+                    <div class="col-6 d-flex align-items-center">
+                        <img src=" ./logogoogle.png" alt="google-logo"><span class="px-2  fs-5 text-secondary">Privacy & Termini</span>
                     </div>
                     <div class="col-6 d-flex justify-content-end align-items-center"><button class="btn btn-primary">Accedi</button></div>
 
@@ -118,46 +118,101 @@ la variabile che contiene il valore dell'indice corrente -->
 
                 </div>
 
-                <style>
-                    p {
-                        font-size: 13px;
-                        padding-bottom: 0.6rem;
-                    }
-
-                    h5 {
-                        font-size: 24px;
-                        ;
-                    }
-
-                    a {
-                        text-decoration: none;
-                    }
-
-                    nav a {
-                        color: black
-                    }
-
-                    li {
-                        font-size: 13px;
-                        padding: 10px 0px;
-                    }
-
-                    .li-nav {
-                        font-size: 16px;
-                        margin-right: 15px;
-                        opacity: 0.6;
-                    }
-
-                    .li-nav:hover {
-                        border-bottom: 1px solid blue;
-                    }
-
-                    hr {
-                        position: relative;
-                        top: -24px
-                    }
-                </style>
             </main>
+
+            <footer>
+                <div class="container h-100 px-5">
+                    <div class=" row h-100">
+                        <div class="col-6 d-flex align-items-center h-100">
+                            <ul class="list-unstyled d-flex aling-items-center m-0">
+                                <a href="#">
+                                    <li>Google</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tutto su Google</li>
+                                </a>
+
+                                <a href="#">
+                                    <li>Privacy</li>
+                                </a>
+                                <a href="#">
+                                    <li>Termini</li>
+                                </a>
+                            </ul>
+
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center h-100">
+                            <span><i class="fa-solid fa-message"></i></span>
+                            <select name="pets" id="pet-select" class="ms-3">
+                                <option value="italiano">Italiano</option>
+                                <option value="espanol">Inglese</option>
+                                <option value="english">Cinese</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </body>
+
+
+    <!-- ****************************+ -->
+    <!-- **********STILEE********** -->
+    <!-- ****************************+ -->
+    <style>
+        p {
+            font-size: 13px;
+            padding-bottom: 0.6rem;
+        }
+
+        h5 {
+            font-size: 24px;
+            ;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav a {
+            color: black
+        }
+
+        li {
+            font-size: 13px;
+            padding: 10px 0px;
+        }
+
+        .li-nav {
+            font-size: 16px;
+            margin-right: 15px;
+            opacity: 0.6;
+        }
+
+        .li-nav:hover {
+            border-bottom: 1px solid blue;
+        }
+
+        hr {
+            position: relative;
+            top: -24px
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            height: 50px;
+            margin: 0;
+        }
+
+        footer li {
+            font-size: 12px;
+            padding-right: 10px;
+            opacity: 0.4;
+            color: black;
+        }
+
+        img {
+            height: 20px;
+        }
+    </style>
 
 </html>
