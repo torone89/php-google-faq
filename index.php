@@ -68,6 +68,10 @@ $headerMenu = [
     <!-- IMPORT BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+    <!-- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <main>
@@ -80,7 +84,10 @@ $headerMenu = [
                     <div class="col-6 d-flex align-items-center">
                         <img src=" ./logogoogle.png" alt="google-logo"><span class="px-2  fs-5 text-secondary">Privacy & Termini</span>
                     </div>
-                    <div class="col-6 d-flex justify-content-end align-items-center"><button class="btn btn-primary">Accedi</button></div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <span class="px-4"><a href=""><i class="fa-solid fa-bars fa-lg"></i></a></span>
+                        <button class="btn btn-primary">Accedi</button>
+                    </div>
 
                 </div>
 
@@ -98,26 +105,18 @@ $headerMenu = [
 
 
 
-
             <main>
                 <div class="container my-5 px-5">
-
 
                     <!-- Il costrutto dopo la parola chiave foreach include all'interno delle parentesi tonde tre elementi:
 array da ciclare
 la parola chiave as
 la variabile che contiene il valore dell'indice corrente -->
                     <?php foreach ($faqs as $value) : ?>
-
                         <h5><?= $value['domanda'] ?></h5>
                         <p><?= $value['risposta'] ?></p>
-
-
                     <?php endforeach; ?>
-
-
                 </div>
-
             </main>
 
             <footer>
@@ -142,8 +141,8 @@ la variabile che contiene il valore dell'indice corrente -->
 
                         </div>
                         <div class="col-6 d-flex justify-content-end align-items-center h-100">
-                            <span><i class="fa-solid fa-message"></i></span>
-                            <select name="pets" id="pet-select" class="ms-3">
+                            <span><a href=""><i class="fa-solid fa-message"></i></a></span>
+                            <select name="language" id="language" class="ms-3">
                                 <option value="italiano">Italiano</option>
                                 <option value="espanol">Inglese</option>
                                 <option value="english">Cinese</option>
@@ -212,6 +211,10 @@ la variabile che contiene il valore dell'indice corrente -->
 
         img {
             height: 20px;
+        }
+
+        i {
+            color: black
         }
     </style>
 
