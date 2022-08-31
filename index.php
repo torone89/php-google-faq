@@ -1,8 +1,16 @@
 <?php
+// ARRAY ASSOCIATIVO
+$faqs = [
+    [
+        'domanda' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+        'risposta' => 'Michele Papagni',
 
-
-
-
+    ],
+    [
+        'domanda' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+        'risposta' => 'Michele Papagni',
+    ]
+]
 ?>
 <!DOCTYPE html>
 <html lang=“en”>
@@ -19,7 +27,24 @@
 
 <main>
 
+    <body>
+        <main>
+            <div class="container text-center my-5">
 
+
+                <!-- Il costrutto dopo la parola chiave foreach include all'interno delle parentesi tonde tre elementi:
+array da ciclare
+la parola chiave as
+la variabile che contiene il valore dell'indice corrente -->
+                <?php foreach ($faqs as $value) : ?>
+                    <h3 class="text-danger"><?= $value['domanda'] ?></h3>
+                    <p><?= $value['risposta'] ?></p>
+
+
+                <?php endforeach; ?>
+
+
+            </div>
 
 </html>
 </main
